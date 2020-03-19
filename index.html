@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>349 Midterm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+      form :focus:required:invalid { 
+        border-color: #a94442;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <header>
+      <h1>Midterm Data</h1>
+    </header>
+    <section>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <form data-coffee-order="form">            
+            <div class="form-group">              
+              <label for="firstName">FIRST NAME:</label>              
+              <input class="form-control" name="first" id="FirstName" 
+              autofocus required pattern="[a-zA-Z\s]+" required/>            
+            </div>
+            <div class="form-group">              
+                <label for="lastName">LAST NAME:</label>              
+                <input class="form-control" name="last" id="lastName" 
+                required pattern="[a-zA-Z\s]+" required/>            
+              </div>
+            <div class="form-group">
+              <label for="emailInput">EMAIL:</label>
+              <input class="form-control" type="email" name="emailAddress"
+              id="emailInput" value="" placeholder="dr@who.com" required/>              
+            </div>
+            <label for="major">MAJOR:</label>
+            <div class="radio">
+              <label><input type="radio" name="major" value="cs" checked>CS</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="major" value="csce">CSCE</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="major" value="math">MATH</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
