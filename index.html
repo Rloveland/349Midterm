@@ -17,7 +17,7 @@
     <section>
       <div class="panel panel-default">
         <div class="panel-body">
-          <form data-coffee-order="form">            
+          <form data-student info="form">            
             <div class="form-group">              
               <label for="firstName">FIRST NAME:</label>              
               <input class="form-control" name="first" id="FirstName" 
@@ -49,5 +49,13 @@
         </div>
       </div>
     </section>
+    <?php 
+        $conid = mysqli_connect("localhost", "root", "password", "database_name");
+        if(! $conid){
+            echo "Cannot Connect. " . mysqli_connect_errno() . " " . 
+                mysqli_connect_error();
+        }
+        mysqli_close($conid);
+    ?>
   </body>
 </html>
